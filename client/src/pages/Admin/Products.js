@@ -67,8 +67,8 @@ const Products = () => {
     {
       title: 'Acciones',
       dataIndex: '_id',
-      render: (_id) => (
-        <Link to={`/dashboard/admin/product/${_id}`} className="product-link">
+      render: (_id, record) => (
+        <Link to={`/dashboard/admin/product/${record.slug}`} className="product-link">
           <button className="btn btn-success">Ver</button>
         </Link>
       ),
